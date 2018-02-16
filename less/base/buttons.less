@@ -1,0 +1,29 @@
+.btn {
+	background-color: transparent;
+	color: @color-white;
+	text-transform: uppercase;
+	border: 3px solid @color-brown-3;
+	font-size: 20px;
+	font-weight: @font-semi-bold;
+	line-height: 1.2;
+	cursor: pointer;
+	transition: background .15s linear;
+	letter-spacing: 1px;
+	padding: 14px 15px;
+
+	&:hover {
+		background-color: @color-brown-3;
+	}
+
+	&.btn-full {
+		width: 100%;
+		
+	}
+}
+
+@media all and (max-width: @media-sm) {
+	.btn {
+		font-size: 16px;
+		padding: 11px 15px;
+	}
+}

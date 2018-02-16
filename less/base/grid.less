@@ -1,0 +1,83 @@
+html {
+	overflow-x: hidden;
+}
+.wdth-content-full {
+	width: 100%;
+}
+
+.over-hide {
+	overflow: hidden;
+}
+.clearfix {
+	&:after,
+	&:before {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+.overflow-hid {
+	overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+.disp-block {
+	display: block;
+}
+
+.pull {
+	&-right {
+		float: right;
+	}
+
+	&-left {
+		float: left;
+	}
+}
+
+.text {
+	&-left {
+		text-align: left;
+	}
+	&-center {
+		text-align: center;
+	}
+	&-right {
+		text-align: right;
+	}
+}
+
+
+@media all and (max-width: 479px) {
+	.hidden-xs {
+		display: none !important;
+	}
+}
+
+@media all and (min-width: 480px) and (max-width: 767px) {
+	.hidden-sm {
+		display: none !important;
+	}
+}
+
+@media all and (min-width: 768px) and (max-width: 989px) {
+	.hidden-md {
+		display: none !important;
+	}
+}
+
+@media all and (min-width: 990px) and (max-width: 1199px) {
+	.hidden-lg {
+		display: none !important;
+	}
+}
+
+@media all and (min-width: 1200px) {
+	.hidden-xlg {
+		display: none !important;
+	}
+}
