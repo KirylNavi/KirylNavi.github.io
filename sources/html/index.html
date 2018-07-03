@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Snipets</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="../vendor/fontawesome/css/solid.css">
+  <link rel="stylesheet" href="../vendor/fontawesome/css/fontawesome.css">  
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Snippets</a>
+      <div>
+        <div class="dropdown">
+          <span class="avatar" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="avatar-image" style="background-image: url(./images/varun.jpg)"></span>
+            <span class="avatar-name">Steave</span>
+            <i class="fa fa-angle-down avatar-icon"></i>
+          </span>
+          <div class="dropdown-menu avatar-dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">
+              <i class="fa fa-sign-out-alt"></i>
+              Log Out
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- End header -->
+
+  <!-- Main -->
+  <main>
+    <div class="container-fluid container-content">
+      <div class="row container-row">
+        <!-- Sidebar -->
+        <aside class="col col-sidebar">
+          <ul class="nav-collection" id="exampleAccordion">
+            <li>
+              <a class="collapsed" data-toggle="collapse" href="#collapseCollection">
+                Collections
+              </a>
+              <ul class="collapse" id="collapseCollection">
+                <li>
+                  <a class="collapsed folder-link" data-toggle="collapse" href="#collapseLearning">
+                    <i class="fa fa-folder"></i>
+                    Learning 
+                  </a>
+                  <ul class="collapse" id="collapseLearning">
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-file-alt"></i>
+                        Python 
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-file-alt"></i>
+                        Angular 
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-file-alt"></i>
+                        React.js 
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-file-alt"></i>
+                    Facebook API
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-file-alt"></i>
+                    RxJS
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="collapsed" data-toggle="collapse" href="#collapseLanguages">
+                Languages
+              </a>
+              <ul class="collapse" id="collapseLanguages">
+                <li>
+                  <a href="#">
+                    <i class="fa fa-file-alt"></i>
+                    Java
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-file-alt"></i>
+                    Javascript
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-file-alt"></i>
+                    Python
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-file-alt"></i>
+                    HTML
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-file-alt"></i>
+                    Ruby
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </aside>
+        <!-- End sidebar -->
+        <!-- List snippets -->
+        <div class="col col-snippets">
+          <div class="snippet-search">
+            <form class="snippet-search-form">
+              <div class="form-group">
+                  <label for="snippetSearch" class="sr-only">Search</label>
+                  <input type="text" class="form-control" id="snippetSearch" placeholder="Search">
+              </div>
+              <button class="btn btn-primary snippet-search-btn">
+                <i class="fa fa-plus"></i>
+              </button>
+            </form>
+          </div>
+          <ul class="snippet-contain">
+            <li class="active snippet-item">
+              <div class="row snippet-item-row">
+                <div class="col snippet-item-col-title">
+                  <h4 class="snippet-title">
+                    This is test snippet that makes it possible to view name in two lines, or three
+                  </h4>
+                </div>
+                <div class="col">
+                    <div class="navbar fake-navbar">
+                      <div class="btn-group">
+                        <span data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fa fa-ellipsis-v"></i>
+                        </span>
+                        <div class="dropdown-menu" >
+                          <a class="dropdown-item" href="#">
+                            First link
+                          </a>
+                          <a class="dropdown-item" href="#">
+                              Second link
+                            </a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <a href="#" class="snippet-file-link">
+                    <i class="fa fa-file-alt"></i>
+                    untitled2.txt
+                  </a>
+                </div>
+                <div class="col">
+                  <span class="snippet-file-size">10.8 kb</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <a href="#" class="snippet-file-link">
+                    <i class="fa fa-file-alt"></i>
+                    untitled.txt
+                  </a>
+                </div>
+                <div class="col">
+                  <span class="snippet-file-size">5.8 kb</span>
+                </div>
+              </div>
+            </li>
+            <li class="snippet-item">
+              <div class="row snippet-item-row">
+                <div class="col snippet-item-col-title">
+                    <h4 class="snippet-title">
+                      This is test snippet
+                    </h4>
+                </div>
+                <div class="col">
+                    <div class="navbar fake-navbar">
+                      <div class="btn-group">
+                        <span data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fa fa-ellipsis-v"></i>
+                        </span>
+                        <div class="dropdown-menu" >
+                          <a class="dropdown-item" href="#">
+                            First link
+                          </a>
+                          <a class="dropdown-item" href="#">
+                              Second link
+                            </a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col">
+                  <a href="#" class="snippet-file-link">
+                    <i class="fa fa-file-alt"></i>
+                    untitled2.txt
+                  </a>
+                </div>
+                <div class="col">
+                  <span class="snippet-file-size">10.8 kb</span>
+                </div>
+              </div>
+            </li>
+            <li class="snippet-item">
+                <div class="row snippet-item-row">
+                  <div class="col snippet-item-col-title">
+                      <h4 class="snippet-title">
+                        This is test snippet
+                      </h4>
+                  </div>
+                  <div class="col">
+                      <div class="navbar fake-navbar">
+                        <div class="btn-group">
+                          <span data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-ellipsis-v"></i>
+                          </span>
+                          <div class="dropdown-menu" >
+                            <a class="dropdown-item" href="#">
+                              First link
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                Second link
+                              </a>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              <div class="row">
+                <div class="col">
+                  <a href="#" class="snippet-file-link">
+                    <i class="fa fa-file-alt"></i>
+                    untitled2.txt
+                  </a>
+                </div>
+                <div class="col">
+                  <span class="snippet-file-size">10.8 kb</span>
+                </div>
+              </div>
+            </li>
+            <li class="snippet-item">
+                <div class="row snippet-item-row">
+                  <div class="col snippet-item-col-title">
+                      <h4 class="snippet-title">
+                        This is test snippet
+                      </h4>
+                  </div>
+                  <div class="col">
+                      <div class="navbar fake-navbar">
+                        <div class="btn-group">
+                          <span data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-ellipsis-v"></i>
+                          </span>
+                          <div class="dropdown-menu" >
+                            <a class="dropdown-item" href="#">
+                              First link
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                Second link
+                              </a>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              <div class="row">
+                <div class="col">
+                  <a href="#" class="snippet-file-link">
+                    <i class="fa fa-file-alt"></i>
+                    untitled2.txt
+                  </a>
+                </div>
+                <div class="col">
+                  <span class="snippet-file-size">10.8 kb</span>
+                </div>
+              </div>
+            </li>
+            <li class="snippet-item">
+                <div class="row snippet-item-row">
+                  <div class="col snippet-item-col-title">
+                      <h4 class="snippet-title">
+                        This is test snippet
+                      </h4>
+                  </div>
+                  <div class="col">
+                      <div class="navbar fake-navbar">
+                        <div class="btn-group">
+                          <span data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-ellipsis-v"></i>
+                          </span>
+                          <div class="dropdown-menu" >
+                            <a class="dropdown-item" href="#">
+                              First link
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                Second link
+                              </a>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              <div class="row">
+                <div class="col">
+                  <a href="#" class="snippet-file-link">
+                    <i class="fa fa-file-alt"></i>
+                    untitled2.txt
+                  </a>
+                </div>
+                <div class="col">
+                  <span class="snippet-file-size">10.8 kb</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- End list snippets -->
+        <!-- Code snippet -->
+        <div class="col col-snippet-code">
+          <h4>
+            This is test snippet that makes it possible to view name in two lines, or three
+          </h4>
+          <div class="snippet-code">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tab-readme" role="tab" aria-controls="tab-readme" aria-selected="false">Readme</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#tab-file" role="tab" aria-controls="tab-file" aria-selected="true">File1.txt</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tab-html" role="tab" aria-controls="tab-html" aria-selected="false">index.html</a>
+              </li>
+
+              <button type="button" class="btn btn-link snippet-code-btn-add">
+                <i class="fa fa-plus"></i>
+              </button>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade" id="tab-readme" role="tabpanel" aria-labelledby="tab-readme">
+                <div class="collapse code-editor show">
+                  <button class="btn btn-link code-editor-btn" type="button" data-toggle="collapse" data-target=".code-editor" aria-expanded="false">
+                    <i class="fa fa-code"></i>
+                  </button>
+                  <div class="jumbotron">
+                    <form>
+                      <div class="form-group">
+                        <label for="exampleInputEmail11">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail11" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword11">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword11" placeholder="Password">
+                      </div>
+                      <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck11">
+                        <label class="form-check-label" for="exampleCheck11">Check me out</label>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                  </div>
+                </div>
+                <div class="collapse code-editor collapse-container-editor-js">
+                  <button class="btn btn-link code-editor-btn" type="button" data-toggle="collapse" data-target=".code-editor" aria-expanded="false">
+                    <i class="fa fa-file"></i>
+                  </button>
+                  <div class="container-editor-js" style="height:400px"></div>
+                </div>
+              </div>
+              <div class="tab-pane fade show active collapse-container-editor-js" id="tab-file" role="tabpanel" aria-labelledby="tab-file">
+                <div class="container-editor-js" style="height:400px"></div>
+              </div>
+              <div class="tab-pane fade" id="tab-html" role="tabpanel" aria-labelledby="tab-html">
+                <div class="snippet-code-example">
+                  <form>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-group form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End code snippet -->
+      </div>
+    </div>
+  </main>
+  <!-- End main -->
+
+  <script src="./js/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="../vendor/monaco-editor/min/vs/loader.js"></script>
+  <script src="./js/init.js"></script>
+</body>
+</html>

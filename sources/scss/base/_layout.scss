@@ -1,0 +1,6 @@
+.container {
+  &-row {
+    height: calc(100vh - #{$nav-height});
+    flex-wrap: nowrap;
+  }
+}

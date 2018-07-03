@@ -1,0 +1,193 @@
+.col {
+  &-sidebar {
+    background-color: $gray-200;
+    flex-basis: 200px;
+    flex-grow: 0;
+    overflow-y: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  &-snippets {
+    flex-basis: 300px;
+    flex-grow: 0;
+    padding: 0;
+    border-right: 1px solid $gray-200;
+    overflow-y: hidden;
+  }
+
+  &-snippet-code {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow-y: auto;
+  }
+}
+
+
+
+/**
+* Nav collection
+*/
+
+.nav-collection {
+  margin: 0;
+  list-style: none;
+  padding-left: 0;
+
+  ul {
+    margin: 0;
+    list-style: none;
+    padding-left: 15px;
+  }
+
+  a {
+    padding: 10px 0;
+    color: $gray-700;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    line-height: 1.2;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .fa {
+    margin-right: 10px;
+  }
+
+  .folder-link {
+
+    .fa-folder {
+      width: 18px;
+    }
+
+    &[aria-expanded="true"] {
+      .fa-folder {
+        &:before {
+          content: '\f07c'
+        }
+      }
+    }
+  }
+
+  ul {
+    a {
+      padding: 5px 0;
+    }
+  }
+}
+
+
+/**
+* Snippets
+*/
+
+.snippet {
+
+  &-search {
+    padding: 12px;
+    border-bottom: 1px solid $gray-200;
+  }
+
+  &-search-btn {
+    margin-left: 10px;
+  }
+
+  &-search-form {
+    display: flex;
+    align-items: center;
+
+    .form-group {
+      margin-bottom: 0;
+      width: 100%;
+    }
+  }
+
+  &-contain {
+    list-style: none;
+    padding-left: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: calc(100vh - #{$nav-height} - #{$snippet-search-height});
+  }
+
+  &-title {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  &-item-row {
+    flex-wrap: nowrap;
+  }
+
+  &-item-col-title {
+    width: 100%;
+    flex-grow: 10;
+    padding-right: 0;
+  }
+
+  &-item {
+    padding: 12px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $gray-100;
+    }
+
+    &.active {
+      background-color: $gray-100;
+
+      .snippet-title {
+        font-weight: 500;
+      }
+    }
+  }
+
+  &-file-size {
+    display: block;
+    text-align: right;
+    font-size: 14px;
+  }
+
+  &-file-link {
+    font-size: 14px;
+  }
+}
+
+/**
+* Code snippet
+*/
+
+.snippet {
+  &-code {
+    margin-top: 20px;
+
+    .tab-content {
+      padding-top: 15px;
+    }
+
+    &-btn-add {
+      margin-left: auto;
+      color: $blue;
+    }
+  }
+}
+
+/**
+* Code editor
+*/
+
+.code-editor {
+  position: relative;
+
+  &-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 14px;
+    z-index: 100;
+  }
+}
+

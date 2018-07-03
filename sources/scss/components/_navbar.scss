@@ -1,0 +1,44 @@
+.avatar {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: $gray-500;
+
+  &:hover {
+    color: $white;
+  }
+
+  &-image {
+    width: 36px;
+    height: 36px;
+    background-size: cover !important;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+  }
+
+  &-name {
+    margin-left: 10px;
+    font-size: 16px;
+  }
+
+  &-icon {
+    margin-left: 5px;
+    margin-top: 2px;
+  }
+
+  &-dropdown-menu {
+    left: auto;
+    right: 0;
+  }
+}
+
+.fake-navbar {
+  padding: 0;
+  justify-content: flex-end;
+
+  .dropdown-menu {
+    left: auto;
+    right: 0;
+  }
+}
