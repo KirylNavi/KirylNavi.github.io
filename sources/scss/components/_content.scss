@@ -17,7 +17,7 @@
   }
 
   &-snippet-code {
-    padding-top: 10px;
+    padding-top: 13px;
     padding-bottom: 10px;
     overflow-y: auto;
   }
@@ -133,11 +133,11 @@
     cursor: pointer;
 
     &:hover {
-      background-color: $gray-100;
+      background-color: $gray-150;
     }
 
     &.active {
-      background-color: $gray-100;
+      background-color: $gray-150;
 
       .snippet-title {
         font-weight: 500;
@@ -153,6 +153,11 @@
 
   &-file-link {
     font-size: 14px;
+    padding-left: 2px;
+
+    .fa {
+      margin-right: 5px;
+    }
   }
 }
 
@@ -162,15 +167,20 @@
 
 .snippet {
   &-code {
-    margin-top: 20px;
+    margin-top: 27px;
+    margin-left: -15px;
+    width: calc(100% + 30px);
 
     .tab-content {
-      padding-top: 15px;
+      padding: 15px;
     }
 
     &-btn-add {
       margin-left: auto;
       color: $blue;
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-right: 2px;
     }
   }
 }
@@ -184,10 +194,14 @@
 
   &-btn {
     position: absolute;
-    right: 10px;
-    top: 10px;
+    right: -2px;
+    top: 0;
     font-size: 14px;
     z-index: 100;
+
+    .fa-file {
+      margin-right: 4px;
+    }
   }
 }
 

@@ -3,11 +3,13 @@ $(document).ready(function() {
 
 	function codeEditorInit() {
 		var itemsElements = document.querySelectorAll('.container-editor-js');
+		var itemsReadmeElements = document.querySelectorAll('.container-readme-editor-js');
 
 		itemsElements.forEach(function(item) {
 			require(['vs/editor/editor.main'], function() {
 				monaco.editor.create(
 					item, {
+					automaticLayout: true,
 					value: [
 						'<form>',
 							'\t<div class="form-group">',
@@ -30,13 +32,34 @@ $(document).ready(function() {
 				});
 			});
 		});
+
+		itemsReadmeElements.forEach(function(item) {
+			require(['vs/editor/editor.main'], function() {
+				monaco.editor.create(
+					item, {
+					automaticLayout: true,
+					value: [
+						'<h2>',
+							'\tCompiled CSS and JS',
+						'</h2>',
+						'<p>Download ready-to-use compiled code for <strong>Bootstrap v4.0.0</strong> to easily drop into your project, which includes:</p>',
+						'<ul>',
+							'\t<li>Compiled and minified CSS bundles</li>',
+							'\t<li>Compiled and minified JavaScript plugins</li>',
+						'</ul>',
+						'<p>This doesn’t include documentation, source files, or any optional JavaScript dependencies (jQuery and Popper.js).</p>'
+					].join('\n'),
+					language: 'html'
+				});
+			});
+		});
 	}
 
 	codeEditorInit();
 
 
-	$('.collapse-container-editor-js').on('shown.bs.collapse', function () {
-		codeEditorInit();
-	});
+	// $('.collapse-container-editor-js').on('shown.bs.collapse', function () {
+	// 	codeEditorInit();
+	// });
 	
 })
